@@ -4,15 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,  user-scalable=no" />
-    <meta name="author" content="connect24" />
+    <meta name="author" content="reliance" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <title><?php echo $title; ?></title>
     <link rel="icon" href="public/images/icon/favicon.png" type="image/x-icon" sizes="16x16">
     <link href="public/css/app.css" rel="stylesheet" />
-    <link href="assets/plugins/slick/slick.css" rel="stylesheet" />
     <script src="assets/js/font-awesome-5.js"></script>
-    <link href="assets/plugins/aos/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -62,7 +60,7 @@
 
 <header>
     <nav class="navbar navbar-expand-lg py-lg-0" id="mainNav">
-        <div class="container-fluid justify-content-lg-around aos-init aos-animate" data-aos="fade-in">
+        <div class="container-fluid justify-content-lg-around aos-init aos-animate">
 
             <a class="navbar-brand d-lg-none" href="index.php">
                 <img src="./public/images/png/logo.png" alt="Reliance Logo" width="200" title="Reliance Logo" />
