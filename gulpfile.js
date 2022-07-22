@@ -19,7 +19,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('js', function () {
-  return gulp.src(['assets/js/jquery-3.5.1.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js'])
+  return gulp.src(['assets/js/jquery-3.5.1.min.js', 'assets/js/popper.min.js', './node_modules/bootstrap/dist/js/bootstrap.min.js'])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./public/js/'));
@@ -28,7 +28,7 @@ gulp.task('js', function () {
 gulp.task('serve', gulp.series('styles','js', function () {
 
   browserSync.init({
-    proxy: 'localhost/connect24/',
+    proxy: 'localhost/rel-career/',
   });
 
   gulp.watch('./assets/sass/**/*.scss', gulp.series('styles')).on('change', reload);

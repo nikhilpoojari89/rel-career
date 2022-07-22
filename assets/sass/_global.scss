@@ -110,6 +110,10 @@ body{
 
 /********** New Css **********/
 
+.resize-none {
+  resize: none!important;
+}
+
 .custom-container {
   @include media-breakpoint-up(md) {
     padding-left: 110px;
@@ -119,6 +123,10 @@ body{
 
 .title-color {
   color: #212121!important;
+}
+
+.font-16 {
+  font-size: 1rem!important;
 }
 
 .font-18 {

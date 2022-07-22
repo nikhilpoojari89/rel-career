@@ -1,7 +1,7 @@
 {
-  "name": "connect24",
+  "name": "rel-career",
   "version": "1.0.0",
-  "description": "Connect24",
+  "description": "rel-career",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nikhilpoojari89/connect24.git"
+    "url": "git+https://github.com/nikhilpoojari89/rel-career"
   },
-  "author": "Connect24",
-  "license": "Connect24",
+  "author": "rel-career",
+  "license": "rel-career",
   "devDependencies": {
     "bootstrap": "^4.5.3",
     "browser-sync": "^2.26.13",
@@ -27,7 +27,7 @@
     "popper.js": "^1.16.1"
   },
   "bugs": {
-    "url": "https://github.com/nikhilpoojari89/connect24/issues"
+    "url": "https://github.com/nikhilpoojari89/rel-career/issues"
   },
-  "homepage": "https://github.com/nikhilpoojari89/connect24#readme"
+  "homepage": "https://github.com/nikhilpoojari89/rel-career#readme"
 }
