@@ -189,16 +189,35 @@ body {
 					overflow: auto;
 					white-space: nowrap;
 					width: 100%;
+					padding-bottom: 10px!important;
+					&::-webkit-scrollbar-thumb,
+					&::-webkit-scrollbar-track {
+						background: transparent; 
+					}
 				}
 				.nav-item {
 					a {
 						font-size: 16px;
 						&.nav-link {
 							color: $secondary;
+							transition: .3s ease-out;
+							box-shadow: #004ba8 0 10px 20px -12px;
 						}
 						&.nav-link {
 							&.active {
 								color: $white;
+								position: relative;
+								&:after {
+									content: '';
+									border-bottom: 3px solid $primary;
+									display: block;
+									position: absolute;
+									bottom: -10px;
+									width: 100%;
+									margin: 0 auto;
+									left: 0;
+									right: 0;
+								}
 							}
 						}
 					}
@@ -206,4 +225,16 @@ body {
 			}
 		}
 	}
+	.tab-content {
+		.tab-pane {
+			&.active {
+				animation: slide-down .4s ease-out;
+			}
+		}
+	}
+}
+
+@keyframes slide-down {
+    0% { opacity: 0; transform: translateX(100%); }
+    100% { opacity: 1; transform: translateX(0); }
 }

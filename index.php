@@ -1,7 +1,6 @@
 <?php $title = "Reliance - Career"; ?>
 <?php include 'header.php' ?>
 
-
 <!--********************** Main Heading Banner Section ***********************-->
 <section class="custom-top-padding mb-5">
     <div class="container-fluid custom-container">
@@ -17,17 +16,17 @@
                                 <div class="custom-nav-tabs-wrapper">
         
                                     <ul class="nav nav-pills list mb-0 custom-nav-tabs py-2 justify-content-between" id="more_info_tabs" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link active" id="pills-branch-details-tab" data-toggle="pill" href="#pills-branch-details" role="tab" aria-controls="pills-branch-details" aria-selected="true">Branch Details</a>
+                                        <li class="nav-item mr-2" role="presentation">
+                                            <a class="nav-link active rounded-pill font-serif font-weight-bold" id="pills-branch-details-tab" data-toggle="pill" href="#pills-branch-details" role="tab" aria-controls="pills-branch-details" aria-selected="true">Branch Details</a>
+                                        </li>
+                                        <li class="nav-item mr-2" role="presentation">
+                                            <a class="nav-link rounded-pill font-serif font-weight-bold" id="pills-personal-details-tab" data-toggle="pill" href="#pills-personal-details" role="tab" aria-controls="pills-personal-details" aria-selected="false">Personal Details</a>
+                                        </li>
+                                        <li class="nav-item mr-2" role="presentation">
+                                            <a class="nav-link rounded-pill font-serif font-weight-bold" id="pills-previous-experience-tab" data-toggle="pill" href="#pills-previous-experience" role="tab" aria-controls="pills-previous-experience" aria-selected="false">Previous Experience</a>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <a class="nav-link" id="pills-personal-details-tab" data-toggle="pill" href="#pills-personal-details" role="tab" aria-controls="pills-personal-details" aria-selected="false">Personal Details</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link" id="pills-previous-experience-tab" data-toggle="pill" href="#pills-previous-experience" role="tab" aria-controls="pills-previous-experience" aria-selected="false">Previous Experience</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link" id="pills-educational-details-tab" data-toggle="pill" href="#pills-educational-details" role="tab" aria-controls="pills-educational-details" aria-selected="false">Educational Details</a>
+                                            <a class="nav-link rounded-pill font-serif font-weight-bold" id="pills-educational-details-tab" data-toggle="pill" href="#pills-educational-details" role="tab" aria-controls="pills-educational-details" aria-selected="false">Educational Details</a>
                                         </li>
                                     </ul>
         
@@ -148,7 +147,7 @@
                                                     <textarea type="text" rows="4" class="form-control resize-none" id="inputAddress" placeholder="Your Address"></textarea>
                                                 </div>
                                                 <div class="form-row">
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-6 col-lg-3">
                                                         <label for="inputGender" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Gender<span class="text-danger">*</span></label>
                                                         <select id="inputGender" class="form-control" required>
                                                             <option selected>Select Gender</option>
@@ -157,7 +156,7 @@
                                                             <option>Others</option>
                                                         </select>
                                                     </div>
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-6 col-lg-3">
                                                         <label for="inputMaritalStatus" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Marital Status<span class="text-danger">*</span></label>
                                                         <select id="inputMaritalStatus" class="form-control" required>
                                                             <option selected>Select Marital Status</option>
@@ -166,7 +165,7 @@
                                                             <option>Widowed</option>
                                                         </select>
                                                     </div>
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-6 col-lg-3">
                                                         <label for="inputSmartPhone" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Smart Phone<span class="text-danger">*</span></label>
                                                         <select id="inputSmartPhone" class="form-control" required>
                                                             <option selected>Select</option>
@@ -174,7 +173,7 @@
                                                             <option>No</option>
                                                         </select>
                                                     </div>
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-6 col-lg-3">
                                                         <label for="inputNative" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Native<span class="text-danger">*</span></label>
                                                         <select id="inputNative" class="form-control" required>
                                                             <option selected>Select Native</option>
@@ -212,7 +211,7 @@
                                             <form>
                                                 <div class="form-row mt-4">
                                                     
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-4">
                                                         <label for="inputIndustry" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Industry<span class="text-danger">*</span></label>
                                                         <select id="inputIndustry" class="form-control" required>
                                                             <option selected>Select Industry</option>
@@ -224,7 +223,7 @@
                                                             <option>Fresher</option>
                                                         </select>
                                                     </div>
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-4">
                                                         <label for="inputSalesExperience" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Sales Experience<span class="text-danger">*</span></label>
                                                         <select id="inputSalesExperience" class="form-control" required>
                                                             <option selected>Select Sales Experience</option>
@@ -340,9 +339,9 @@
         scrollCompleted = 0;
         var slideVar = setInterval(function(){
             if(direction == 'left'){
-                container.scrollLeft -= 15;
+                container.scrollLeft -= 18;
             } else {
-                container.scrollLeft += 15;
+                container.scrollLeft += 18;
             }
             scrollCompleted += 10;
             if(scrollCompleted >= 100){
