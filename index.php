@@ -48,7 +48,7 @@
 
                                             <form>
                                                 <div class="form-row mt-4">
-                                                    <div class="form-group col-md-6">
+                                                    <div class="form-group col-md-4">
                                                         <label for="inputDepartment" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Department<span class="text-danger">*</span></label>
                                                         <select id="inputDepartment" class="form-control" required>
                                                             <option selected>Select Department</option>
@@ -56,7 +56,7 @@
                                                             <option>Department 2</option>
                                                         </select>
                                                     </div>
-                                                    <div class="form-group col-md-6">
+                                                    <div class="form-group col-md-4">
                                                         <label for="inputZone" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Zone<span class="text-danger">*</span></label>
                                                         <select id="inputZone" class="form-control" required>
                                                             <option selected>Select Zone</option>
@@ -64,10 +64,18 @@
                                                             <option>Zone 2</option>
                                                         </select>
                                                     </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="inputZone" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">State<span class="text-danger">*</span></label>
+                                                        <select id="inputZone" class="form-control" required>
+                                                            <option selected>Select State</option>
+                                                            <option>State 1</option>
+                                                            <option>State 2</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputHiringBranch" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Hiring Branch<span class="text-danger">*</span><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="top" title="Branch the referral will be hired/working."></i></label>
+                                                        <label for="inputHiringBranch" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Hiring Branch<span class="text-danger">*</span><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="top" title="Indicates the branch candidates will be hired in."></i></label>
                                                         <select id="inputHiringBranch" class="form-control is-invalid" required>
                                                             <option selected>Select Hiring Branch</option>
                                                             <option>Hiring Branch 1</option>
@@ -78,7 +86,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputInterviewBranch" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Interview Branch<span class="text-danger">*</span><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="top" title="Branch the manager interviewing the referral is based."></i></label>
+                                                        <label for="inputInterviewBranch" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Interview Branch<span class="text-danger">*</span><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="top" title="Indicates the branch where the referral will be interviewed."></i></label>
                                                         <select id="inputInterviewBranch" class="form-control is-valid" required>
                                                             <option selected>Select Interview Branch</option>
                                                             <option>Interview Branch 1</option>
@@ -210,9 +218,25 @@
 
                                             <form>
                                                 <div class="form-row mt-4">
-                                                    
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputIndustry" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Industry<span class="text-danger">*</span></label>
+                                                        <label for="inputUploadResume" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Upload Resume<span class="text-danger">*</span><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="top" title="File size 5 MB and PDF & Word Doc format."></i></label>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="inputUploadResume" required>
+                                                            <label class="custom-file-label font-16" for="inputUploadResume">Choose File...</label>
+                                                            <!-- <div class="invalid-feedback">Example invalid custom file feedback</div> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="inputDomain" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Domain<span class="text-danger">*</span></label>
+                                                        <select id="inputDomain" class="form-control" required>
+                                                            <option selected>Select Domain</option>
+                                                            <option>Life Insurance</option>
+                                                            <option>Non Life Insurance</option>
+                                                            <option>Fresher</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="inputIndustry" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Current Industry<span class="text-danger">*</span><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="top" title="Indicates the industry of the current organization."></i></label>
                                                         <select id="inputIndustry" class="form-control" required>
                                                             <option selected>Select Industry</option>
                                                             <option>Life Insurance</option>
@@ -223,7 +247,9 @@
                                                             <option>Fresher</option>
                                                         </select>
                                                     </div>
-                                                    <div class="form-group col-md-4">
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6 col-lg-4">
                                                         <label for="inputSalesExperience" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Sales Experience<span class="text-danger">*</span></label>
                                                         <select id="inputSalesExperience" class="form-control" required>
                                                             <option selected>Select Sales Experience</option>
@@ -234,15 +260,13 @@
                                                             <option>3 and Above</option>
                                                         </select>
                                                     </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-4">
+                                                    <div class="form-group col-md-6 col-lg-4">
                                                         <label for="inputCurrentCTC" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Current CTC (per annum)<span class="text-danger">*</span></label>
                                                         <input type="number" class="form-control" placeholder="Your Current CTC" autocomplete="off" id="inputCurrentCTC" required>
                                                     </div>
-                                                    <div class="form-group col-md-4">
-                                                        <label for="inputLastOrganisation" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Last Organisation<span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control" placeholder="Your Last Organisation" autocomplete="off" id="inputLastOrganisation" required>
+                                                    <div class="form-group col-lg-4">
+                                                        <label for="inputCurrentOrganisation" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Current Organisation<span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Your Current Organisation" autocomplete="off" id="inputCurrentOrganisation" required>
                                                     </div>
                                                 </div>
 
@@ -258,6 +282,7 @@
                                 </div>
 
                             </div>
+
                             <div class="tab-pane fade" id="pills-educational-details" role="tabpanel" aria-labelledby="pills-educational-details-tab">
 
                                 <div class="row">
@@ -271,7 +296,7 @@
                                             <form>
                                                 <div class="form-row mt-4">
                                                     
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-6">
                                                         <label for="inputEducationalDetails" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Educational Details<span class="text-danger">*</span></label>
                                                         <select id="inputEducationalDetails" class="form-control" required>
                                                             <option selected>Select Educational Details</option>
@@ -328,10 +353,15 @@
 
 <script>
 
+    //Upload Resume File Name JS
+    $(document).ready(function () {
+        bsCustomFileInput.init()
+    });
+
     //Tooltip Activate JS
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
 
     //Scroll Left/Right on Prev/Next Button Click JS
     function slide(direction){
