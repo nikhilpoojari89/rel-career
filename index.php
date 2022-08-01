@@ -221,7 +221,7 @@
                                                     <div class="form-group col-md-4">
                                                         <label for="inputUploadResume" class="title-color font-smooth font-16 font-weight-bold letter-spacing-1">Upload Resume<span class="text-danger">*</span><i class="fas fa-info-circle" data-toggle="tooltip" data-placement="top" title="File size 5 MB and PDF & Word Doc format."></i></label>
                                                         <div class="custom-file">
-                                                            <input type="file" class="custom-file-input" id="inputUploadResume" required>
+                                                            <input type="file" class="custom-file-input" id="inputUploadResume" accept="application/msword, application/pdf" required>
                                                             <label class="custom-file-label font-16" for="inputUploadResume">Choose File...</label>
                                                             <!-- <div class="invalid-feedback">Example invalid custom file feedback</div> -->
                                                         </div>
