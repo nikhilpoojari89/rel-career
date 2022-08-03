@@ -64,7 +64,7 @@
 
             <a class="navbar-brand d-lg-none" href="index.php">
                 <!-- <img src="./public/images/png/logo.png" alt="Reliance Logo" width="200" title="Reliance Logo" /> -->
-                <img src="./public/images/png/logo.svg" alt="Reliance Logo" width="250" title="Reliance Logo" />
+                <img src="./public/images/png/logo.png" alt="Reliance Logo" width="250" title="Reliance Logo" />
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="ham-icon"><i class="fas fa-bars"></i></span>
@@ -78,7 +78,7 @@
                             <!-- Logo -->
                             <a class="navbar-brand pb-2" href="index.php">
                                 <!-- <img src="./public/images/png/logo.png" alt="Reliance Logo" width="200" title="Reliance Logo" /> -->
-                                <img src="./public/images/png/logo.svg" alt="Reliance Logo" width="300" title="Reliance Logo" />
+                                <img src="./public/images/png/logo.png" alt="Reliance Logo" width="300" title="Reliance Logo" />
                             </a>
                         </div>
                         <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end mt-3 mt-md-0">
